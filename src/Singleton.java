@@ -4,8 +4,15 @@ public class Singleton {
 
     public static Singleton getInstance(){
         if (instance == null){
-            return instance = new Singleton();
+            instance = new Singleton();
+            System.out.println("Creating new instance");
         }
         return instance;
     }
+
+    public void Showmessage(){
+        System.out.println("Created Object");
+    }
+
+
 }
