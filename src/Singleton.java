@@ -1,7 +1,6 @@
 public class Singleton {
     private static  Singleton instance;
     private Singleton(){}
-
     public static Singleton getInstance(){
         if (instance == null){
             instance = new Singleton();
@@ -9,10 +8,7 @@ public class Singleton {
         }
         return instance;
     }
-
     public void Showmessage(){
         System.out.println("Created Object");
     }
-
-
 }
